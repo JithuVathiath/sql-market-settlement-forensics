@@ -55,7 +55,7 @@ jobs:
         run: docker run --rm settlementctl:ci version
 
       - name: Upload benchmark plan
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: postgres-benchmark-plan
           path: benchmarks/results/ci-smoke.txt
