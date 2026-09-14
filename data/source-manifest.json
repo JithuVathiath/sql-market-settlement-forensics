@@ -1,0 +1,18 @@
+{
+  "dataset": "SEC Fails-to-Deliver Data",
+  "authority": "U.S. Securities and Exchange Commission",
+  "landing_page": "https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data",
+  "files": [
+    {
+      "period": "2026-07",
+      "half": "first",
+      "url": "https://www.sec.gov/files/data/fails-deliver-data/cnsfails202607a.zip"
+    },
+    {
+      "period": "2026-07",
+      "half": "second",
+      "url": "https://www.sec.gov/files/data/fails-deliver-data/cnsfails202607b.zip"
+    }
+  ]
+}
+
