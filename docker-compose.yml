@@ -8,7 +8,9 @@ services:
     ports:
       - "127.0.0.1:55432:5432"
     volumes:
-      - settlement-postgres:/var/lib/postgresql/data
+      # PostgreSQL 18 moved PGDATA beneath a major-version-specific directory.
+      # Mount the documented parent so the database is genuinely persistent.
+      - settlement-postgres:/var/lib/postgresql
       - .:/workspace:ro
     working_dir: /workspace
     healthcheck:
@@ -16,6 +18,7 @@ services:
       interval: 2s
       timeout: 3s
       retries: 30
+      start_period: 10s
     restart: unless-stopped
 
   cli:
