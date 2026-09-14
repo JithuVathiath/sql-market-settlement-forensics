@@ -1,0 +1,15 @@
+.DS_Store
+.env
+bin/
+coverage.out
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/rejects/*
+!data/rejects/.gitkeep
+reports/generated/*
+!reports/generated/.gitkeep
+benchmarks/results/*
+!benchmarks/results/.gitkeep
+
