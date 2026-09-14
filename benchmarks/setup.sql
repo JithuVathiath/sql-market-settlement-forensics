@@ -20,6 +20,6 @@ SELECT
     'S' || ((n * 3571) % 25000)::text,
     100 + ((n * 104729) % 5000000),
     CASE WHEN n % 97 = 0 THEN NULL ELSE (1 + ((n * 8191) % 100000) / 100.0)::numeric(12, 4) END
-FROM generate_series(1, :scale) AS series(n);
+FROM generate_series(1::bigint, (:scale)::bigint) AS series(n);
 
 ANALYZE benchmark.ftd_heap;
