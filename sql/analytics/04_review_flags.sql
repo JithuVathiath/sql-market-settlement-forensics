@@ -9,4 +9,3 @@ SELECT
     review_flag
 FROM mart.quantity_review_flags
 ORDER BY historical_z_score DESC, quantity_fails DESC;
-

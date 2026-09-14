@@ -13,4 +13,3 @@ SELECT
 FROM core.ftd_observation
 GROUP BY GROUPING SETS ((settlement_date), (symbol), ())
 ORDER BY grain, reported_balance_observations DESC;
-

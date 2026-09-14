@@ -7,4 +7,3 @@ SELECT
     percent_rank() OVER (ORDER BY top_ten_share) AS concentration_percentile
 FROM mart.daily_concentration
 ORDER BY top_ten_share DESC, settlement_date;
-

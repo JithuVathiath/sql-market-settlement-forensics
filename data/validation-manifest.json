@@ -1,0 +1,31 @@
+{
+  "purpose": "Reproducible validation corpus; production authority remains the SEC landing page and files in source-manifest.json.",
+  "upstream_authority": "U.S. Securities and Exchange Commission",
+  "upstream_landing_page": "https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data",
+  "mirror_repository": "https://github.com/tangentstorm/gme-data",
+  "mirror_commit": "0e151cfdab3425d4bf2d05fe337c8f8eac494347",
+  "files": [
+    {
+      "name": "cnsfails202102a.txt",
+      "url": "https://raw.githubusercontent.com/tangentstorm/gme-data/0e151cfdab3425d4bf2d05fe337c8f8eac494347/raw/sec/ftd/cnsfails202102a.txt",
+      "git_blob_sha1": "d26d0d0b8d9b5b58d7d1e6ca9190e4332e43f857",
+      "sha256": "610d305a0ff3c0d136688c3df531742705a93c68231ab09b338652dbdd62bece",
+      "business_records": 59224,
+      "trailer_total_quantity": 3242854991
+    },
+    {
+      "name": "cnsfails202102b.txt",
+      "url": "https://raw.githubusercontent.com/tangentstorm/gme-data/0e151cfdab3425d4bf2d05fe337c8f8eac494347/raw/sec/ftd/cnsfails202102b.txt",
+      "git_blob_sha1": "48089d98d24917ffc0c225a9e73e145bf69df5ea",
+      "sha256": "ff53ead16768451a40c9109d38961a3bbedc50866814eba6823777c2e0f620d8",
+      "business_records": 54843,
+      "trailer_total_quantity": 4088130057
+    }
+  ],
+  "control_totals": {
+    "business_records": 114067,
+    "trailer_total_quantity": 7330985048,
+    "normalizer_accepted": 114067,
+    "normalizer_rejected_control_rows": 4
+  }
+}

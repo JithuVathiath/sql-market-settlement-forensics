@@ -13,4 +13,3 @@ USER app
 WORKDIR /workspace
 ENTRYPOINT ["settlementctl"]
 CMD ["help"]
-

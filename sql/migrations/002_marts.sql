@@ -157,4 +157,3 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_security_month_summary_pk
     ON mart.security_month_summary (settlement_month, cusip);
 
 COMMIT;
-

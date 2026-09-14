@@ -1,0 +1,70 @@
+name: quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  go-and-sql:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Go
+        uses: actions/setup-go@v7
+        with:
+          go-version: "1.27.x"
+          cache: true
+
+      - name: Run Go quality gate
+        run: make quality
+
+      - name: Validate committed evidence
+        run: |
+          jq -e '.control_totals.business_records == 114067 and .control_totals.trailer_total_quantity == 7330985048' data/validation-manifest.json
+          jq -e '.rows == 114067 and .quantity_fails == 7330985048 and .settlement_dates == 19' reports/february-2021-profile.json
+
+      - name: Scan Go dependencies
+        uses: golang/govulncheck-action@v1
+        with:
+          go-version-input: "1.27.x"
+          go-package: ./...
+
+      - name: Start PostgreSQL
+        run: docker compose up --detach --wait db
+
+      - name: Validate warehouse and analytics
+        run: make sql-test
+
+      - name: Run benchmark smoke test
+        run: |
+          docker compose exec -T db psql -v ON_ERROR_STOP=1 -v scale=100000 -U settlement -d settlement -f benchmarks/setup.sql
+          docker compose exec -T db psql -v ON_ERROR_STOP=1 -U settlement -d settlement -f benchmarks/run.sql > benchmarks/results/ci-smoke.txt
+
+      - name: Build hardened CLI image
+        run: docker build --tag settlementctl:ci .
+
+      - name: Verify container
+        run: docker run --rm settlementctl:ci version
+
+      - name: Upload benchmark plan
+        uses: actions/upload-artifact@v6
+        with:
+          name: postgres-benchmark-plan
+          path: benchmarks/results/ci-smoke.txt
+
+  dependency-review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/dependency-review-action@v4
