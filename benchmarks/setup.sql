@@ -23,4 +23,3 @@ SELECT
 FROM generate_series(1, :scale) AS series(n);
 
 ANALYZE benchmark.ftd_heap;
-

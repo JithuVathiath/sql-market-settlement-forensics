@@ -1,0 +1,315 @@
+{
+  "dataset": "SEC Fails-to-Deliver",
+  "rows": 114067,
+  "first_date": "2021-02-01",
+  "last_date": "2021-02-26",
+  "settlement_dates": 19,
+  "unique_cusips": 13029,
+  "unique_symbols": 13055,
+  "quantity_fails": 7330985048,
+  "dollar_proxy": 71907049808.82022,
+  "missing_price_rows": 1383,
+  "missing_price_rate": 0.01212445317225841,
+  "top_ten_quantity_share": 0.42562776455958745,
+  "top_by_quantity": [
+    {
+      "cusip": "482781101",
+      "symbol": "KYNC",
+      "description": "KYN CAP GROUP INC COM",
+      "observations": 19,
+      "priced_observations": 0,
+      "quantity_fails": 1410593127,
+      "dollar_proxy": 0
+    },
+    {
+      "cusip": "09605C301",
+      "symbol": "BLSP",
+      "description": "BLUE SPHERE CORP",
+      "observations": 12,
+      "priced_observations": 12,
+      "quantity_fails": 637007380,
+      "dollar_proxy": 12609910.83
+    },
+    {
+      "cusip": "00652J208",
+      "symbol": "ADTM",
+      "description": "ADAPTIVE MEDIAS, INC. COMMON S",
+      "observations": 4,
+      "priced_observations": 0,
+      "quantity_fails": 345146766,
+      "dollar_proxy": 0
+    },
+    {
+      "cusip": "75972U307",
+      "symbol": "RBNW",
+      "description": "RENEWABLE ENERGY \u0026 P",
+      "observations": 2,
+      "priced_observations": 0,
+      "quantity_fails": 207510197,
+      "dollar_proxy": 0
+    },
+    {
+      "cusip": "86730L109",
+      "symbol": "SNDL",
+      "description": "SUNDIAL GROWERS INC COM",
+      "observations": 16,
+      "priced_observations": 16,
+      "quantity_fails": 138190992,
+      "dollar_proxy": 183109821.83
+    },
+    {
+      "cusip": "140143108",
+      "symbol": "CFGX",
+      "description": "CAPITAL FINL GLOBAL INC",
+      "observations": 3,
+      "priced_observations": 0,
+      "quantity_fails": 100027694,
+      "dollar_proxy": 0
+    },
+    {
+      "cusip": "45782A403",
+      "symbol": "NSPX",
+      "description": "INSPYR THERAPEUTICS INC",
+      "observations": 18,
+      "priced_observations": 15,
+      "quantity_fails": 80869923,
+      "dollar_proxy": 2231080.51
+    },
+    {
+      "cusip": "16077A101",
+      "symbol": "CHUC",
+      "description": "CHARLIES HLDGS INC",
+      "observations": 19,
+      "priced_observations": 8,
+      "quantity_fails": 78009479,
+      "dollar_proxy": 240700.12
+    },
+    {
+      "cusip": "74371E204",
+      "symbol": "TXTM",
+      "description": "PROTEXT MOBILITY INC",
+      "observations": 10,
+      "priced_observations": 0,
+      "quantity_fails": 68420290,
+      "dollar_proxy": 0
+    },
+    {
+      "cusip": "69608A108",
+      "symbol": "PLTR",
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "observations": 18,
+      "priced_observations": 18,
+      "quantity_fails": 54494930,
+      "dollar_proxy": 1496678790.4
+    }
+  ],
+  "top_by_dollar_proxy": [
+    {
+      "cusip": "464287655",
+      "symbol": "IWM",
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "observations": 18,
+      "priced_observations": 18,
+      "quantity_fails": 12323683,
+      "dollar_proxy": 2712526479.3999996
+    },
+    {
+      "cusip": "78462F103",
+      "symbol": "SPY",
+      "description": "SPDR S\u0026P 500 ETF TR",
+      "observations": 19,
+      "priced_observations": 19,
+      "quantity_fails": 4940527,
+      "dollar_proxy": 1892237176.7
+    },
+    {
+      "cusip": "46090E103",
+      "symbol": "QQQ",
+      "description": "INVESCO QQQ TR",
+      "observations": 19,
+      "priced_observations": 19,
+      "quantity_fails": 5051026,
+      "dollar_proxy": 1643337757.9900002
+    },
+    {
+      "cusip": "69608A108",
+      "symbol": "PLTR",
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "observations": 18,
+      "priced_observations": 18,
+      "quantity_fails": 54494930,
+      "dollar_proxy": 1496678790.4
+    },
+    {
+      "cusip": "36118L106",
+      "symbol": "FUTU",
+      "description": "FUTU HLDGS LTD SPONSORED ADS",
+      "observations": 19,
+      "priced_observations": 19,
+      "quantity_fails": 8678830,
+      "dollar_proxy": 1388745933.28
+    },
+    {
+      "cusip": "459506101",
+      "symbol": "IFF",
+      "description": "INTL FLAVORS \u0026 FRAGRANCES",
+      "observations": 15,
+      "priced_observations": 15,
+      "quantity_fails": 11041660,
+      "dollar_proxy": 1383622256.4700005
+    },
+    {
+      "cusip": "21077C107",
+      "symbol": "WISH",
+      "description": "CONTEXTLOGIC INC COM CL A",
+      "observations": 17,
+      "priced_observations": 17,
+      "quantity_fails": 35843662,
+      "dollar_proxy": 742863406.74
+    },
+    {
+      "cusip": "464287242",
+      "symbol": "LQD",
+      "description": "ISHARES IBOXX $ INVESTMENT GRA",
+      "observations": 18,
+      "priced_observations": 18,
+      "quantity_fails": 5313955,
+      "dollar_proxy": 710848971.81
+    },
+    {
+      "cusip": "464287705",
+      "symbol": "IJJ",
+      "description": "ISHARES S\u0026P MIDCAP 400 VALUE E",
+      "observations": 7,
+      "priced_observations": 7,
+      "quantity_fails": 7730685,
+      "dollar_proxy": 687647185.1700001
+    },
+    {
+      "cusip": "464288513",
+      "symbol": "HYG",
+      "description": "ISHARES TR",
+      "observations": 18,
+      "priced_observations": 18,
+      "quantity_fails": 7118066,
+      "dollar_proxy": 621287533.74
+    }
+  ],
+  "daily": [
+    {
+      "date": "2021-02-01",
+      "observations": 5949,
+      "quantity_fails": 427316235,
+      "dollar_proxy": 3762048812.2299905
+    },
+    {
+      "date": "2021-02-02",
+      "observations": 5767,
+      "quantity_fails": 233964946,
+      "dollar_proxy": 4859532415.079988
+    },
+    {
+      "date": "2021-02-03",
+      "observations": 5888,
+      "quantity_fails": 238301130,
+      "dollar_proxy": 4031931046.6699877
+    },
+    {
+      "date": "2021-02-04",
+      "observations": 5690,
+      "quantity_fails": 326020907,
+      "dollar_proxy": 3317917963.3799973
+    },
+    {
+      "date": "2021-02-05",
+      "observations": 5756,
+      "quantity_fails": 234041116,
+      "dollar_proxy": 3051836910.44
+    },
+    {
+      "date": "2021-02-08",
+      "observations": 5810,
+      "quantity_fails": 238999059,
+      "dollar_proxy": 3019365940.7100015
+    },
+    {
+      "date": "2021-02-09",
+      "observations": 6095,
+      "quantity_fails": 272543145,
+      "dollar_proxy": 3392498786.9700084
+    },
+    {
+      "date": "2021-02-10",
+      "observations": 5939,
+      "quantity_fails": 399523926,
+      "dollar_proxy": 3695174882.129998
+    },
+    {
+      "date": "2021-02-11",
+      "observations": 6078,
+      "quantity_fails": 352118760,
+      "dollar_proxy": 3107221956.669998
+    },
+    {
+      "date": "2021-02-12",
+      "observations": 6252,
+      "quantity_fails": 520025767,
+      "dollar_proxy": 2935128904.7499905
+    },
+    {
+      "date": "2021-02-16",
+      "observations": 5885,
+      "quantity_fails": 625746084,
+      "dollar_proxy": 3466706089.0100055
+    },
+    {
+      "date": "2021-02-17",
+      "observations": 5816,
+      "quantity_fails": 541463783,
+      "dollar_proxy": 4363149584.710006
+    },
+    {
+      "date": "2021-02-18",
+      "observations": 6257,
+      "quantity_fails": 410844137,
+      "dollar_proxy": 4903481277.640003
+    },
+    {
+      "date": "2021-02-19",
+      "observations": 5867,
+      "quantity_fails": 446905668,
+      "dollar_proxy": 4134257707.4500012
+    },
+    {
+      "date": "2021-02-22",
+      "observations": 6047,
+      "quantity_fails": 434733665,
+      "dollar_proxy": 4087815697.62001
+    },
+    {
+      "date": "2021-02-23",
+      "observations": 6486,
+      "quantity_fails": 451645523,
+      "dollar_proxy": 4417223327.020002
+    },
+    {
+      "date": "2021-02-24",
+      "observations": 6224,
+      "quantity_fails": 399575676,
+      "dollar_proxy": 3547205122.470002
+    },
+    {
+      "date": "2021-02-25",
+      "observations": 6224,
+      "quantity_fails": 399974872,
+      "dollar_proxy": 4217025745.9399962
+    },
+    {
+      "date": "2021-02-26",
+      "observations": 6037,
+      "quantity_fails": 377240649,
+      "dollar_proxy": 3597527637.929994
+    }
+  ],
+  "interpretation_boundary": "Descriptive settlement-stress analysis; not evidence of short selling, naked short selling, manipulation, or misconduct."
+}

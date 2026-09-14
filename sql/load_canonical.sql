@@ -66,4 +66,3 @@ ON CONFLICT (settlement_date, cusip) DO UPDATE SET
 
 REFRESH MATERIALIZED VIEW mart.security_month_summary;
 COMMIT;
-

@@ -27,4 +27,3 @@ EXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)
 SELECT count(*), sum(quantity_fails)
 FROM benchmark.ftd_heap
 WHERE settlement_date BETWEEN date '2023-01-01' AND date '2023-01-31';
-

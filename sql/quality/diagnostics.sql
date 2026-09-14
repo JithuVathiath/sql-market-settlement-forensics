@@ -17,4 +17,3 @@ SELECT
     raw_row_count - accepted_row_count - rejected_row_count AS unexplained_rows
 FROM audit.source_file
 WHERE raw_row_count <> accepted_row_count + rejected_row_count;
-

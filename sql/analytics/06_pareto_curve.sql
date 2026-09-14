@@ -21,4 +21,3 @@ SELECT
 FROM ranked
 WHERE rank <= 100
 ORDER BY rank;
-

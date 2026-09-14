@@ -10,4 +10,3 @@ SELECT
     round(missing_price_observations::numeric / nullif(security_observations, 0), 4) AS missing_price_rate
 FROM mart.daily_market_summary
 ORDER BY settlement_date;
-

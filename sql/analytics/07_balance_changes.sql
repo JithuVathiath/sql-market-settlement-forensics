@@ -24,4 +24,3 @@ FROM changes
 WHERE prior_quantity IS NOT NULL
 ORDER BY abs(quantity_fails - prior_quantity) DESC
 LIMIT 100;
-

@@ -1,0 +1,17 @@
+{
+  "files": 2,
+  "accepted": 114067,
+  "rejected": 4,
+  "sources": [
+    {
+      "source_file": "cnsfails202102a.txt",
+      "accepted": 59224,
+      "rejected": 2
+    },
+    {
+      "source_file": "cnsfails202102b.txt",
+      "accepted": 54843,
+      "rejected": 2
+    }
+  ]
+}

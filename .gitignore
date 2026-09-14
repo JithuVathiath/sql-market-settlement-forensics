@@ -12,4 +12,3 @@ reports/generated/*
 !reports/generated/.gitkeep
 benchmarks/results/*
 !benchmarks/results/.gitkeep
-

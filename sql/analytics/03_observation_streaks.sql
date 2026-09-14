@@ -11,4 +11,3 @@ FROM mart.observation_streaks
 WHERE consecutive_observation_dates >= 3
 ORDER BY consecutive_observation_dates DESC, peak_reported_balance DESC
 LIMIT 50;
-

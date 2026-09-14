@@ -8,4 +8,3 @@ SELECT
     description
 FROM mart.identity_change_log
 ORDER BY settlement_date, cusip;
-

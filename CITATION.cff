@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "SQL Market Settlement Forensics"
+message: "If this software supports your work, please cite it using this metadata."
+type: software
+authors:
+  - family-names: "Biju"
+    given-names: "Jithu Vathiath"
+repository-code: "https://github.com/JithuVathiath/sql-market-settlement-forensics"
+license: MIT
+version: 0.1.0
+date-released: 2026-09-14
+keywords:
+  - PostgreSQL
+  - market microstructure
+  - settlement
+  - data engineering
+  - SEC
