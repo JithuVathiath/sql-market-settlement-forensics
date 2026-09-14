@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:18.6-alpine
+    environment:
+      POSTGRES_DB: settlement
+      POSTGRES_USER: settlement
+      POSTGRES_PASSWORD: settlement-local-only
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - settlement-postgres:/var/lib/postgresql/data
+      - .:/workspace:ro
+    working_dir: /workspace
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U settlement -d settlement"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+
+  cli:
+    build:
+      context: .
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    profiles: ["tools"]
+
+volumes:
+  settlement-postgres:
+
